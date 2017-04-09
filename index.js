@@ -59,7 +59,7 @@ function extractCSS(source, tempDir, context) {
 
 // Generate the name of the CSS file being processed
 function cssFileName(context) {
-  var fileName = path.relative(__dirname, context.resourcePath) + '.scss';
+  var fileName = path.relative(__dirname, context.resourcePath) + '.css';
 
   return fileName.split('/').join('-');
 }
